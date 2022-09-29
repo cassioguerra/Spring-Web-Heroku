@@ -16,9 +16,9 @@ public class DataConfiguration {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/loja?useTimezone=true&serverTimezone=America/Sao_Paulo");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/NomeDoBanco?useTimezone=true&serverTimezone=America/Sao_Paulo");
 		dataSource.setUsername("root");
-		dataSource.setPassword("root");
+		dataSource.setPassword("");
 		return dataSource;
 	}
 	
@@ -32,4 +32,4 @@ public class DataConfiguration {
 		adapter.setPrepareConnection(true);
 		return adapter;
 	}
-}
+} 
